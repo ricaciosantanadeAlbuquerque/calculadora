@@ -51,6 +51,8 @@ void opcao({required int op}){
               int num2 =  int.parse(entrada2);
 
               int soma = num1 + num2;
+
+              somaValores(num1:num1,num2:num2);
               
             }catch(e){
 
@@ -146,10 +148,10 @@ void opcao({required int op}){
     exit(0);
 
   }  
+}
 
 //+++++++++++++++++++++++++SOMA++++++++++++++++++++++++
 
-void somaValores({required int num1,required int num2}){
-  print('O resultado da soma ${ num1 + num2}');
-}
+void somaValores({required int num1, required int num2}) {
+  print('O resultado da soma ${num1 + num2}');
 }
