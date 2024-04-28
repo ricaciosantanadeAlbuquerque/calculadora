@@ -3,7 +3,7 @@ void main(List<String> args){
   
 }
 
-void menu(){
+int menu(){
   int valor = 0;
 
   print('========== Menu ==========');
@@ -17,7 +17,7 @@ void menu(){
   if(entradaOp != null){
     if(entradaOp.isNotEmpty){
        try{
-         valor = int.parse(entradaOp);
+         valor = int.parse(entradaOp); // sobreposição de valor de 0 para a opção
        }catch(e){
         throw Exception('$entradaOp, Não é um valor numérico por tanto não pode ser CONVERTIDO !!!');
        }
@@ -29,5 +29,6 @@ void menu(){
       print('ERRO! $entradaOp é nulo ou vazio !! ');
   }
 
+  return valor;
 
 }
