@@ -51,7 +51,7 @@ void opcao({required int op}){
               int num2 =  int.parse(entrada2);
 
               int soma = num1 + num2;
-
+              
             }catch(e){
 
               throw Exception('ERRO! $entrada1 e $entrada2 não são valores numéricos');
@@ -147,4 +147,9 @@ void opcao({required int op}){
 
   }  
 
+//+++++++++++++++++++++++++SOMA++++++++++++++++++++++++
+
+void somaValores({required int num1,required int num2}){
+  print('O resultado da soma ${ num1 + num2}');
+}
 }
