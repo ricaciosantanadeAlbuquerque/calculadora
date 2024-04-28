@@ -52,7 +52,7 @@ void opcao({required int op}){
 
               int soma = num1 + num2;
 
-              somaValores(num1:num1,num2:num2);
+              somaValores(soma:soma);
               
             }catch(e){
 
@@ -152,6 +152,6 @@ void opcao({required int op}){
 
 //+++++++++++++++++++++++++SOMA++++++++++++++++++++++++
 
-void somaValores({required int num1, required int num2}) {
-  print('O resultado da soma ${num1 + num2}');
+void somaValores({required int soma}) {
+  print('O resultado da soma ${soma}');
 }
