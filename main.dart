@@ -1,3 +1,4 @@
+import 'dart:io';
 void main(List<String> args){
   
 }
@@ -9,6 +10,7 @@ void menu(){
   print('Digite [3] multiplicar !');
   print('Digite [4] dividir !');
   print('Digite [5] para sair !');
-
+  String? entradaOp = stdin.readLineSync();
+  
 
 }
