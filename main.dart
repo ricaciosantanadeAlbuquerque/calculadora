@@ -1,6 +1,6 @@
 import 'dart:io';
 void main(List<String> args){
-  
+  opcao(op: menu());
 }
 
 int menu(){
@@ -30,5 +30,121 @@ int menu(){
   }
 
   return valor;
+
+}
+
+// ===========================================================opcao==========================================================
+
+void opcao({required int op}){
+
+  switch(op){
+    case 1:
+    print('Digite o primeiro valor');
+    String? entrada1 = stdin.readLineSync();
+    print('Digite o segundo valor ');
+    String? entrada2 = stdin.readLineSync();
+
+     if(entrada1 != null &&entrada2 != null ){
+        if(entrada1.isNotEmpty && entrada2.isNotEmpty){
+            try{
+              int num1 = int.parse(entrada1);
+              int num2 =  int.parse(entrada2);
+
+              int soma = num1 + num2;
+
+            }catch(e){
+
+              throw Exception('ERRO! $entrada1 e $entrada2 não são valores numéricos');
+
+              }
+        }else{
+          print('ERRO! valor nulo ou vazio !!');
+        }
+     }else{
+      print('ERRO! valor nulo !!');
+     }
+
+    break;
+    case 2:
+      print('Digite o primeiro valor');
+      String? entrada1 = stdin.readLineSync();
+      print('Digite o segundo valor ');
+      String? entrada2 = stdin.readLineSync();
+
+      if (entrada1 != null && entrada2 != null) {
+        if (entrada1.isNotEmpty && entrada2.isNotEmpty) {
+          try {
+            int num1 = int.parse(entrada1);
+            int num2 = int.parse(entrada2);
+
+            int subtracao = num1 - num2 ;
+
+          } catch (e) {
+            throw Exception('ERRO! $entrada1 e $entrada2 não são valores numéricos');
+          }
+        } else {
+          print('ERRO! valor nulo ou vazio !!');
+        }
+      } else {
+        print('ERRO! valor nulo !!');
+      }
+    break;
+    case 3:
+      print('Digite o primeiro valor');
+      String? entrada1 = stdin.readLineSync();
+      print('Digite o segundo valor ');
+      String? entrada2 = stdin.readLineSync();
+
+      if (entrada1 != null && entrada2 != null) {
+        if (entrada1.isNotEmpty && entrada2.isNotEmpty) {
+          try {
+            int num1 = int.parse(entrada1);
+            int num2 = int.parse(entrada2);
+
+            int multiplicacao =  num1 * num2 ;
+
+          } catch (e) {
+            throw Exception('ERRO! $entrada1 e $entrada2 não são valores numéricos');
+          }
+        } else {
+          print('ERRO! valor nulo ou vazio !!');
+        }
+      } else {
+        print('ERRO! valor nulo !!');
+      }
+    break;
+    case 4:
+      print('Digite o primeiro valor');
+      String? entrada1 = stdin.readLineSync();
+      print('Digite o segundo valor ');
+      String? entrada2 = stdin.readLineSync();
+
+      if (entrada1 != null && entrada2 != null) {
+        if (entrada1.isNotEmpty && entrada2.isNotEmpty) {
+          try {
+            int num1 = int.parse(entrada1);
+            int num2 = int.parse(entrada2);
+            
+            int divisao = num1 ~/ num2 ;
+
+          } catch (e) {
+            throw Exception('ERRO! $entrada1 e $entrada2 não são valores numéricos');
+          }
+        } else {
+          print('ERRO! valor nulo ou vazio !!');
+        }
+      } else {
+        print('ERRO! valor nulo !!');
+      }
+    break;
+    case 5:
+    print('Encerrando o Programa !');
+    exit(0);
+    default:
+    print('ERRO! valor fora da faixa !!!\n');
+    print('O programa será encerrado');
+    exit(0);
+
+  }  
 
 }
