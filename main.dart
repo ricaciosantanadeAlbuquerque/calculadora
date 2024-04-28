@@ -1,6 +1,6 @@
 import 'dart:io';
 void main(List<String> args){
-  
+  opcao(op: menu());
 }
 
 int menu(){
@@ -32,6 +32,8 @@ int menu(){
   return valor;
 
 }
+
+// ===========================================================opcao==========================================================
 
 void opcao({required int op}){
 
@@ -124,7 +126,7 @@ void opcao({required int op}){
             int num2 = int.parse(entrada2);
             
             int divisao = num1 ~/ num2 ;
-            
+
           } catch (e) {
             throw Exception('ERRO! $entrada1 e $entrada2 não são valores numéricos');
           }
