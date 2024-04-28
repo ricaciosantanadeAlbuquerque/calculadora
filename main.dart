@@ -1,3 +1,3 @@
-void main(Lis<String> args){
+void main(List<String> args){
   
 }
