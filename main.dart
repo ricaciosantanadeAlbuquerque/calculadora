@@ -132,6 +132,8 @@ void opcao({required int op}){
             
             int divisao = num1 ~/ num2 ;
 
+            divisaoValores(divisao: divisao);
+
           } catch (e) {
             throw Exception('ERRO! $entrada1 e $entrada2 não são valores numéricos');
           }
@@ -169,4 +171,10 @@ void subtracaoValores({required int subtracao}){
 
 void multiplicacaoValores({required int multiplicacao}){
   print('O resultado da multiplicação $multiplicacao');
+}
+
+//                 Divisao 
+
+void divisaoValores({required int divisao}){
+  print('O resultado da divisão $divisao');
 }
