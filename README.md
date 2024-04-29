@@ -16,7 +16,7 @@ praticar os comandos do **git em bash (git rebase)**, e algoritmo em dart.
 
 ## imagem
 
-![git rebase](C:\Users\ricacio\Desktop\Calculadora\assets\image\rebase.jpg)
+![git rebase](assets\image\rebase.jpg)
 
 ## link do repositório
 [repositório](https://github.com/ricaciosantanadeAlbuquerque/calculadora)
