@@ -107,6 +107,7 @@ void opcao({required int op}){
 
             int multiplicacao =  num1 * num2 ;
 
+            multiplicacaoValores(multiplicacao: multiplicacao);
           } catch (e) {
             throw Exception('ERRO! $entrada1 e $entrada2 não são valores numéricos');
           }
