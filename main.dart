@@ -107,6 +107,7 @@ void opcao({required int op}){
 
             int multiplicacao =  num1 * num2 ;
 
+            multiplicacaoValores(multiplicacao: multiplicacao);
           } catch (e) {
             throw Exception('ERRO! $entrada1 e $entrada2 não são valores numéricos');
           }
@@ -162,4 +163,10 @@ void somaValores({required int soma}) {
 
 void subtracaoValores({required int subtracao}){
   print('O Resultado da subtração é $subtracao !');
+}
+
+// ******************Multiplicacao*************************
+
+void multiplicacaoValores({required int multiplicacao}){
+  print('O resultado da multiplicação $multiplicacao');
 }
