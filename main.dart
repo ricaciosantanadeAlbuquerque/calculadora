@@ -163,3 +163,9 @@ void somaValores({required int soma}) {
 void subtracaoValores({required int subtracao}){
   print('O Resultado da subtração é $subtracao !');
 }
+
+// ******************Multiplicacao*************************
+
+void multiplicacaoValores({required int multiplicacao}){
+  print('O resultado da multiplicação $multiplicacao');
+}
