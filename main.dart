@@ -170,3 +170,9 @@ void subtracaoValores({required int subtracao}){
 void multiplicacaoValores({required int multiplicacao}){
   print('O resultado da multiplicação $multiplicacao');
 }
+
+//                 Divisao 
+
+void divisaoValores({required int divisao}){
+  print('O resultado da divisão $divisao');
+}
